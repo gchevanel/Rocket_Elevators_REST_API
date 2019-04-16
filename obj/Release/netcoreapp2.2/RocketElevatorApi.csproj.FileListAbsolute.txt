@@ -1,0 +1,14 @@
+C:\Rocket_Elevators_REST_API\bin\Release\netcoreapp2.2\RocketElevatorApi.deps.json
+C:\Rocket_Elevators_REST_API\bin\Release\netcoreapp2.2\RocketElevatorApi.runtimeconfig.json
+C:\Rocket_Elevators_REST_API\bin\Release\netcoreapp2.2\RocketElevatorApi.runtimeconfig.dev.json
+C:\Rocket_Elevators_REST_API\bin\Release\netcoreapp2.2\RocketElevatorApi.dll
+C:\Rocket_Elevators_REST_API\bin\Release\netcoreapp2.2\RocketElevatorApi.pdb
+C:\Rocket_Elevators_REST_API\obj\Release\netcoreapp2.2\RocketElevatorApi.csproj.CoreCompileInputs.cache
+C:\Rocket_Elevators_REST_API\obj\Release\netcoreapp2.2\RocketElevatorApi.RazorAssemblyInfo.cache
+C:\Rocket_Elevators_REST_API\obj\Release\netcoreapp2.2\RocketElevatorApi.RazorAssemblyInfo.cs
+C:\Rocket_Elevators_REST_API\obj\Release\netcoreapp2.2\RocketElevatorApi.AssemblyInfoInputs.cache
+C:\Rocket_Elevators_REST_API\obj\Release\netcoreapp2.2\RocketElevatorApi.AssemblyInfo.cs
+C:\Rocket_Elevators_REST_API\obj\Release\netcoreapp2.2\RocketElevatorApi.RazorTargetAssemblyInfo.cache
+C:\Rocket_Elevators_REST_API\obj\Release\netcoreapp2.2\RocketElevatorApi.dll
+C:\Rocket_Elevators_REST_API\obj\Release\netcoreapp2.2\RocketElevatorApi.pdb
+C:\Rocket_Elevators_REST_API\obj\Release\netcoreapp2.2\RocketElevatorApi.csprojAssemblyReference.cache

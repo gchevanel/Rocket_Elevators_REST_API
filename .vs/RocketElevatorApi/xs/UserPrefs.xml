@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{7BD917C1-4D81-40ED-8EFA-B660ACFBB04E}|Default">
+  <MonoDevelop.Ide.ItemProperties.RocketElevatorApi PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RocketElevatorApi.csproj">
+    <Files>
+      <File FileName="Models/Battery.cs" Line="11" Column="6" />
+      <File FileName="Controllers/BatteryController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/InterventionController.cs" Line="1" Column="1" />
+      <File FileName="appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="appsettings.json" Line="9" Column="69" />
+      <File FileName="Controllers/BuildingController.cs" Line="1" Column="1" />
+      <File FileName="Models/Building.cs" Line="11" Column="6" />
+      <File FileName="Models/Column.cs" Line="1" Column="1" />
+      <File FileName="Models/Elevator.cs" Line="11" Column="11" />
+      <File FileName="Models/Intervention.cs" Line="1" Column="1" />
+      <File FileName="Models/Lead.cs" Line="1" Column="1" />
+      <File FileName="RocketElevatorApi.csproj" Line="1" Column="1" />
+      <File FileName="package-lock.json" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="30" Column="78" />
+      <File FileName="Models/RocketElevatorContext.cs" Line="10" Column="49" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RocketElevatorApi" expanded="True">
+            <Node name="RocketElevatorApi" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="InterventionController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
