@@ -36,13 +36,12 @@ namespace RocketElevatorApi.Controllers {
 
         // GET: api/lead
    [HttpPost]
-      public bool PostAdministrator([FromBody]JObject email)
+      public ActionResult<Administrator> PostAdministrator([FromBody]JObject email)
       {
-        Console.WriteLine(email);
 
           //get the value associate with the key of my Json object email
           var queryValidEmail = email.GetValue("email");
-        Console.WriteLine(email);
+
           var validEmail = queryValidEmail.ToString();
 
           //compare
@@ -50,12 +49,12 @@ namespace RocketElevatorApi.Controllers {
 
           if (administratorEmail.Count() == 0)
           {
-              return false;
+              return StatusCode(404);
           }
           else
           {
-              return true;
-
+              return StatusCode(200);
+              
           }
 
 
