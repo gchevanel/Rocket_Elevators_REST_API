@@ -32,7 +32,7 @@ namespace RocketElevatorApi.Controllers
         {
             IQueryable<Elevator> Elevators =
            from le in _context.Elevators
-           where le.status == "Intervention" && le.status == "Inactive"
+           where le.status == "Intervention" || le.status == "Inactive"
            select le;
 
             return Elevators.ToList();
