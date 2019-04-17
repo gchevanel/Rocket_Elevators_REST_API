@@ -6,13 +6,16 @@ using Microsoft.EntityFrameworkCore;
 
 using RocketElevatorApi.Models;
 
-namespace RocketElevatorApi.Controllers {
+namespace RocketElevatorApi.Controllers
+{
     [Route("api/[controller]")]
     [ApiController]
-    public class ElevatorController : ControllerBase {
+    public class ElevatorController : ControllerBase
+    {
         private readonly RocketElevatorContext _context;
 
-        public ElevatorController(RocketElevatorContext context) {
+        public ElevatorController(RocketElevatorContext context)
+        {
             _context = context;
 
             // if (_context.Elevators.Count() == 0) {
@@ -25,21 +28,29 @@ namespace RocketElevatorApi.Controllers {
 
         // GET: api/Elevator
         [HttpGet]
-        public IEnumerable<Elevator> GetElevators() {
-            return _context.Elevators;
+        public IEnumerable<Elevator> GetElevators()
+        {
+            IQueryable<Elevator> Elevators =
+           from le in _context.Elevators
+           where le.status == "Intervention" && le.status == "Inactive"
+           select le;
+
+            return Elevators.ToList();
         }
 
-    
+
         //  public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItems() {
         //      return await _context.TodoItems.ToListAsync();
         //  }
 
         // GET: api/Todo/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Elevator>> GetTodoItem(long id) {
+        public async Task<ActionResult<Elevator>> GetTodoItem(long id)
+        {
             var todoItem = await _context.Elevators.FindAsync(id);
 
-            if (todoItem == null) {
+            if (todoItem == null)
+            {
                 return NotFound();
             }
 
@@ -57,11 +68,13 @@ namespace RocketElevatorApi.Controllers {
 
         // PUT: api/Todo/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTodoItem(long id, Elevator item) {
-            if (id != item.id) {
+        public async Task<IActionResult> PutTodoItem(long id, Elevator item)
+        {
+            if (id != item.id)
+            {
                 return BadRequest();
             }
-            
+
             if (item.status == "Intervention" || item.status == "Active" || item.status == "Inactive")
             {
                 _context.Entry(item).State = EntityState.Modified;

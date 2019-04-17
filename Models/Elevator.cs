@@ -6,10 +6,12 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
-namespace RocketElevatorApi.Models {
+namespace RocketElevatorApi.Models
+{
 
     [Table("elevators")]
-    public class Elevator {
+    public class Elevator
+    {
         [Key]
         public long id { get; set; }
         [ForeignKey("column_id")]
