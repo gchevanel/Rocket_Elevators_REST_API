@@ -34,6 +34,7 @@ namespace RocketElevatorApi.Controllers
            from le in _context.Addresses
            where le.entity == "Building"
            select le;
+            var data = Addresses.GroupBy(c => c.city).SelectMany(c => c).ToList();
 
             return Addresses.ToList();
         }
