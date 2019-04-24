@@ -13,6 +13,7 @@ namespace RocketElevatorApi.Models
         public DbSet<Administrator> Administrators { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Address> Addresses { get; set; }
+        public DbSet<Quote> Quotes { get; set; }
 
     }
 }
