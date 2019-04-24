@@ -12,6 +12,7 @@ namespace RocketElevatorApi.Models
         public DbSet<Intervention> Interventions { get; set; }
         public DbSet<Administrator> Administrators { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Address> Addresses { get; set; }
 
     }
 }
