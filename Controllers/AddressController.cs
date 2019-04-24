@@ -31,10 +31,10 @@ namespace RocketElevatorApi.Controllers
         public IEnumerable<Address> GetAddresses()
         {
             IQueryable<Address> Addresses =
-           from le in _context.Addresses
-           where le.entity == "Building"
-           select le;
-            var data = Addresses.GroupBy(c => c.city).SelectMany(c => c).ToList();
+           (from le in _context.Addresses
+            where le.entity == "Building"
+            select le).GroupBy(c => c.city).Select(a => a.FirstOrDefault());
+            var data = Addresses.GroupBy(c => c.city).Select(a => a.FirstOrDefault());
 
             return Addresses.ToList();
         }
