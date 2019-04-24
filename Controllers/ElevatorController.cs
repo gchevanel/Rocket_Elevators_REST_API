@@ -56,7 +56,16 @@ namespace RocketElevatorApi.Controllers
 
             return todoItem;
         }
+        [HttpGet("all")]
+        public IEnumerable<Elevator> GetAllElevators()
+        {
+            IQueryable<Elevator> Elevators =
+           from le in _context.Elevators
+           where le.status == "Intervention" || le.status == "Inactive" || le.status == "Active"
+           select le;
 
+            return Elevators.ToList();
+        }
         // // POST: api/Todo
         // [HttpPost]
         // public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem item) {
