@@ -78,7 +78,7 @@ namespace RocketElevatorApi.Controllers
             {
                 return BadRequest();
             }
-            if (item.id < 200)
+            if (item.id > 200)
             {
 
                 return Content("Please enter a valid elevator id");
