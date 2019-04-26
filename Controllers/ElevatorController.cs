@@ -53,10 +53,6 @@ namespace RocketElevatorApi.Controllers
             {
                 return NotFound();
             }
-            if (todoItem.id > 200)
-            {
-                return NotFound();
-            }
 
             return todoItem;
         }

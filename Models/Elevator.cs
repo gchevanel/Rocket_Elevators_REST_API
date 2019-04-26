@@ -17,5 +17,8 @@ namespace RocketElevatorApi.Models
         [ForeignKey("column_id")]
         public long column_id { get; set; }
         public string status { get; set; }
+        public string serial_number { get; set; }
+        public string elevator_class { get; set; }
+        public string elevator_type { get; set; }
     }
 }
