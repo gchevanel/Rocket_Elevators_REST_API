@@ -78,13 +78,13 @@ namespace RocketElevatorApi.Controllers
             {
                 return BadRequest();
             }
-            if (item.id > 200)
+            else if (item.id > 200)
             {
 
                 return Content("Please enter a valid elevator id");
 
             }
-            if (item.status == "Intervention" || item.status == "Active" || item.status == "Inactive")
+            else if (item.status == "Intervention" || item.status == "Active" || item.status == "Inactive")
             {
                 _context.Entry(item).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
